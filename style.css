@@ -1,0 +1,68 @@
+/* RPG 场景地图样式 */
+
+#rpg-map-panel {
+    position: fixed;
+    right: 16px;
+    top: 100px;
+    width: 420px;
+    background: rgba(15, 15, 25, 0.95);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+    border-radius: 12px;
+    padding: 12px;
+    z-index: 9998;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+    font-family: "Microsoft YaHei", sans-serif;
+}
+
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-title {
+    color: #ffd700;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#rpg-map-canvas {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.map-header button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.map-header button:hover {
+    background: rgba(255, 215, 0, 0.2);
+    border-color: #ffd700;
+}
+
+.map-close {
+    font-size: 18px;
+    padding: 0px 8px !important;
+}
+
+/* 手机端适配 */
+@media (max-width: 768px) {
+    #rpg-map-panel {
+        width: 90vw;
+        right: 5vw;
+        top: 80px;
+    }
+}
